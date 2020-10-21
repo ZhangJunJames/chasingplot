@@ -62,11 +62,16 @@ def testTts2():
     for i in x: 
         y.append(pro.MRS_mammal(i)) 
 
+    fig, ax = pylab.subplots()
+    props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
+    ax.text(0.05, 0.95, "textstr", transform=ax.transAxes, fontsize=9, verticalalignment='top', bbox=props)
     pylab.title("MRS")
     pylab.xlabel("mass(kg)")
     pylab.ylabel("MRS(km/h)")
     pylab.plot(x, y)
     pylab.legend()
+    # pylab.ylim(50, 55)
+
     pylab.show()
 
 def testSpeed():
