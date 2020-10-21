@@ -1,7 +1,6 @@
 import math
 import pylab
 
-
 def MRS_mammal(mass):
     """
     Args:
@@ -86,7 +85,7 @@ def get_int_input():
     num = input(">")
     while not num.isdigit():  # just check int
         print("please input a integer num, try again.")
-        num = input()
+        num = input(">")
     return int(num)
 
 
@@ -101,7 +100,7 @@ def get_digit_input():
     num = input(">")
     while not _is_digit(num):
         print("please input a digital num, try again.")
-        num = input()
+        num = input(">")
     return float(num)
 
 
