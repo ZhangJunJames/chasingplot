@@ -199,7 +199,7 @@ def main():
         textStr = "mrs: " + "{:.2f}".format(predator_top_speed) + "m/s"
         textStr += "\ntts: " + "{:.1f}".format(predator_time_to_top_speed) + "s"
         if is_caught_prey :
-            textStr += "\ttime: " + "{:.1f}".format(caught_time) + "s"
+            textStr += "\ntime: " + "{:.1f}".format(caught_time) + "s"
         fig, ax = pylab.subplots()
         props = dict(boxstyle='round', facecolor='wheat', alpha=0.5)
         ax.text(0.5, 0.95, textStr, transform=ax.transAxes, fontsize=9, verticalalignment='top', bbox=props)
